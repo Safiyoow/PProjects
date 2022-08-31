@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5</title>
+    <!--<style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow:hidden;
+        }
+        li {
+            float: left;
+        }
+        li a{
+            display: block;
+            color:rgb(184, 28, 28);
+            text-align: center;
+            padding: 16px;
+            text-decoration:none ;
+        }
+        a:hover{
+            background-color: #111111;
+        }
+        
+    </style>-->
+    <style>
+        .city {
+            background-color: brown;
+            color: black;
+            font-weight: bold;
+            font-style:normal;
+            font-family: Tahoma;
+        }
+        .note{
+            font-family: times new roman;
+            background-color: rgb(89, 0, 255);
+            color: white;
+        }
+        .country {
+            background-color: tomato;
+            color: white;
+        }
+        .area{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="#Bay">Baydhabo</a></p>
+    <p><a href="#BD">jump to Dhaka</a></p>
+    <h2>Lists with Navigation</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#contact">contact</a></li>
+    </ul>
+    <h2>Nested Lists.</h2>
+    <ol>
+        <li>Home
+            <ul>
+                <li>OurFaceArea</li>
+                <li>MainThings</li>
+            </ul>
+        </li>
+        <li>Services
+            <ul>
+                <li>DesigningYourWeb</li>
+                <li>ReinventingYourPage</li>
+            </ul>
+        </li>
+        <li>About
+            <ul>
+                <li>WhoWeAre</li>
+                <li>WhatWeDo</li>
+            </ul>
+        </li>
+        <li>contact
+            <ul>
+                <li>ReachUsFrom</li>
+                <li>StayTuneWithUs</li>
+            </ul>
+        </li>
+
+    </ol>
+    <div class="city">
+        <h2>Mogadishu</h2>
+        <p>Mogadishu is the capital city of Somalia</p>
+    </div>
+    <div class="city">
+        <h2>Baydhabo</h2>
+        <p>Baydhabo is the capital city of Bay region</p>
+    </div>
+    <div class="city">
+        <h2>Garbaharey</h2>
+        <p>Garbaharey is the capital city of Gedo region</p>
+    </div>
+
+    <h3>This is an <span class="note">Important</span> Text.</h3>
+    <p>I Love <span class="note">Somalia</span> very much</p>
+
+    <h4 class="country area">kismaayo</h4>
+    <h4 class="country">Somalia</h4>
+    <h4 class="country">Bangladesh</h4>
+
+    <button onclick="myFFunction()">Hide Elements</button>
+    <script>
+        function myFFunction(){
+            var x= document.getElementsByClassName("city");
+            for(var i=0; i<x.length; i++){
+                x[i].style.display= "none";
+            }  
+        }
+    </script>
+
+    <!--Bookmarks Using id Attribute -->
+
+   <h2>Mogadishu</h2>
+   <p>the 1<sup>st</sup> capital city of Somalia.</p>
+   <h2 id="Bay">Baydhabo</h2>
+   <p>The capital city of Bay Region in somalia.</p>
+   <h2>Hargaysa</h2>
+   <p>the 2<sup>nd</sup> capital city of Somalia.</p>
+   <h2 id="BD">Dhaka</h2>
+   <p>the capital city of Bangladesh</p>
+   <h2>kismaayo</h2>
+   <p>the 3<sup>rd</sup> capital city of Somalia.</p>
+   <h2>Tokyo</h2>
+   <p>the capital city of Japan.</p>
+   <h2>paris</h2>
+   <p>the capital city of France.</p>
+
+   <h1 id="bD">Bangladesh</h1>
+   <button onclick="displayResult()">Change This</button>
+   <script>
+    function displayResult(){
+        document.getElementById("bD").innerHTML ="WAdankayga labaad";
+    }
+   </script>
+</body>
+</html>
