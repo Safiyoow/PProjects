@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTMLJavaScript</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+</head>
+<body>
+    <h1>BismiLlaah My First JavaScript</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Display Date and Time</button>
+    <p id="demo"></p>
+
+    <h2>let us write Some thing by Using Scripttag.</h2>
+    <p id="salaam"></p>
+    <script>
+        document.getElementById("salaam").innerHTML = "Salaam , How's it?";
+    </script>
+
+    <h2>Now we'll change some message by using script and also we'll style it.</h2>
+    <button type="button" onclick="firstFunction()">Tab Here to change</button>
+    <p id="change">This part will be changed In Shaa ALlaah.</p>
+    
+    <script>
+        function firstFunction() {
+       document.getElementById("change").innerHTML = "Isn't it Good and Easy?";
+       document.getElementById("change").style.textAlign = "center";
+       document.getElementById("change").style.color = "Red";
+       document.getElementById("change").style.fontSize = "40px";
+       document.getElementById("change").style.backgroundColor = "yellow";
+    }
+        </script>
+    
+    <script>
+        function light(sw) {
+            var pic;
+            if(sw == 0){
+                pic = "pic_bulboff.gif"
+            } else {
+            pic = "bulbon.gif"
+            }
+        document.getElementById('image').src = pic;
+    }
+    </script>
+    <img id="image" src="pic_bulboff.gif" width="100" height="180">
+    <p> <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button> 
+    </p>
+
+    <div style="background-color:e5e5e5; padding: 15px; text-align:center;">
+        <h1>Haye Iiwaram</h1>
+    </div>
+
+    <div style="overflow:auto">
+        <div class="menu">
+            <a href="#"> <pre>Link 1</pre></a>
+            <a href="#"><pre>Link 2</pre></a>
+            <a href="#"><pre>Link 3</pre></a>
+            <a href="#"><pre>Link 4</pre></a>
+        </div>
+
+        <div class="main">
+           <h2>Lorem ipsum</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eum illo voluptas!</p>
+        </div>
+        <div class="right">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          </div>
+    </div>
+    <div style="background-color:e5e5e5 ; text-align:center;padding:10px;margin-top:7px;">&copy; copyright Safiya.com</div>
+
+    
+</body>
+</html>
