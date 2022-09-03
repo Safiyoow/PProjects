@@ -1,18 +1,24 @@
 
-h2{
-color:blue;
-margin-left: 40px;
-margin-top: 10px;
-}
-
 nav{
     background-color: white; height: 100%; width: 100;
+    margin: 0%;
 }
+
+nav h2{
+    color:black;
+    margin-left: 30px;
+    margin-top: 10px;
+    }
+nav h2 span {
+    color: blue;
+    }
+    
 
 nav ul{
     list-style-type: none;
     padding-top: 0%;
-    margin-left: 800px;
+    margin-left: 700px;
+  margin-block-start: 0%;
 }
 nav ul li{
     display: inline;
@@ -27,19 +33,33 @@ nav ul li a{
 nav ul li a:hover{
     color:blue;
 }
+nav ul span a {
+    background-color: blue;
+    color:white;
+    margin-left: 40px;
+    padding: 10px;
+    text-decoration: none;
+    flex-direction:row;
+}
+
 
 header {
     display: flex;
 }
 header #div1{
-    margin-left:105px;   
+    margin-left:90px; 
+    padding:10px;  
 }
-header #div1 h2{
-    margin-left: 70px;
+header #div1 h1{
     color: black;
+    
+}
+header #div1 h1 span {
+  margin-right:  10px;
 }
 header #div1 p{
-    margin-left: 10px;
+    padding: 10px;
+    margin: 0;
 }
 header #div1 a{
     background-color: blue;
@@ -52,6 +72,38 @@ header #div2 img{
 width: 80%;
 padding-top: 30px;
 margin-left: 60px;
-
+}
+.C0 {
+    text-align: center;
+}
+#sec1 {
+    display: flex;
+    margin-left:200px;
+    
+}
+#sec1 #div1{
+    background-color: grey;
+    padding:30px;
+  
+}
+#sec1 #div1 h3{
+text-align: center;
 }
 
+#sec1 #div2 {
+    background-color: red;
+    padding:10px;
+ 
+}
+ #sec1 #div2 h3{
+        text-align: center;
+        }
+
+#sec1 #div3 {
+    background-color: grey;
+    padding:10px;
+}
+
+#sec1 #div3 h3{
+    text-align: center;
+    }
