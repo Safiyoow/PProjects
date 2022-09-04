@@ -76,34 +76,41 @@ margin-left: 60px;
 .C0 {
     text-align: center;
 }
-#sec1 {
+.container  {
     display: flex;
-    margin-left:200px;
-    
-}
-#sec1 #div1{
-    background-color: grey;
-    padding:30px;
-  
-}
-#sec1 #div1 h3{
-text-align: center;
-}
-
-#sec1 #div2 {
-    background-color: red;
-    padding:10px;
- 
-}
- #sec1 #div2 h3{
-        text-align: center;
-        }
-
-#sec1 #div3 {
-    background-color: grey;
-    padding:10px;
-}
-
-#sec1 #div3 h3{
     text-align: center;
-    }
+    margin-left: 150px;
+    flex-direction: row;
+}
+.container i{
+    border-radius: 50px;
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    color: white;
+    padding: 20px;
+    display:inline-block
+
+}
+.container #s {
+    padding-left: 20px;
+    padding: 20px;
+    background-color:  rgb(220, 215, 215);
+
+}
+
+.container #t {
+    padding-left: 20px;
+    padding: 20px;
+    background-color: rgb(220, 215, 215);
+    display: inline;   
+}
+.container #u {
+    display: inline;
+    padding: 20px;
+    background-color:  rgb(220, 215, 215);
+}
+
+    
+
+
