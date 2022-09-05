@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 nav{
     background-color: white; height: 100%; width: 100;
     margin: 0%;
@@ -49,6 +52,7 @@ header {
 header #div1{
     margin-left:90px; 
     padding:10px;  
+   flex-direction: column;
 }
 header #div1 h1{
     color: black;
@@ -79,8 +83,9 @@ margin-left: 60px;
 .container  {
     display: flex;
     text-align: center;
-    margin-left: 150px;
+    margin-left: 170px;
     flex-direction: row;
+   padding: 20px;
 }
 .container i{
     border-radius: 50px;
@@ -88,29 +93,235 @@ margin-left: 60px;
     width: 20px;
     height: 20px;
     color: white;
-    padding: 20px;
-    display:inline-block
-
+    padding: 10px;
 }
 .container #s {
-    padding-left: 20px;
-    padding: 20px;
+    padding: 10px;
     background-color:  rgb(220, 215, 215);
-
+    margin-right: 20px;
 }
 
 .container #t {
-    padding-left: 20px;
-    padding: 20px;
+    padding: 10px;
     background-color: rgb(220, 215, 215);
-    display: inline;   
+    margin-right: 20px;
 }
 .container #u {
-    display: inline;
-    padding: 20px;
+    padding: 10px;
     background-color:  rgb(220, 215, 215);
+    margin-right: 20px;
 }
 
-    
+.register {
+    display: flex;
+    padding: 10px;
+    padding: 20px;
+    background-color: rgb(255, 250, 250)
+}
+.register #lab img {
+    width:500px ;
+    height:300px;
+    margin-right: 30px;
+
+}
+.register #info{
+    margin-left: 40px;
+    padding: 40px;
+}
+.register #info h2 {
+    color: blue;
+    display: flex;
+}
+.register #info a{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px;
+}
+.customer {
+    padding: 20px;
+    background-color: white;
+    display: flex
+}
+.customer #head h2 {
+    color: blue;
+}
+.customer #in{
+    text-align: center;
+    margin-top: 100px;
+}
+.customer #in img{
+    width: 90px;
+    height: 80px;
+    border-radius: 50px;
+}
 
 
+#services {
+    background-color: rgba(238, 238, 248, 523);
+    padding: 30px;
+ 
+}
+#services .head{
+    text-align: center;
+    margin-top: 10px;
+}
+#services .para{
+    text-align: center;
+    margin-top: 10px;
+}
+#services #sectors{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+#services #sectors .cardio{
+    background: #fff;
+    padding: 20px;
+    width: 200px;
+    margin-right: 20px;
+}
+#services #sectors .cardio i{
+    font-size: 30px;
+    color: white;
+    background: blue;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+#services #sectors .cardio h4{
+    margin-bottom: 20px;
+    text-align: center;
+}
+#services #sectors .teeth{
+    background: #fff;
+    padding: 20px;
+    width: 200px;
+    margin-right: 20px;
+}
+#services #sectors .teeth i{
+    font-size: 30px;
+    color: white;
+    background: blue;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+#services #sectors .teeth h4{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#services #sectors .lungs{
+    background: #fff;
+    padding: 20px;
+    width: 200px;
+    margin-right: 20px;
+}
+#services #sectors .lungs i{
+    font-size: 30px;
+    color: white;
+    background: blue;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+#services #sectors .teeth-2{
+    background: #fff;
+    padding: 20px;
+    width: 200px;
+    margin-right: 20px;
+}
+#services #sectors .teeth-2 h4{
+    text-align: center;
+}
+#services #sectors .teeth-2 i{
+    font-size: 30px;
+    color: white;
+    background: blue;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+#subscribe{
+    background: darkblue;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#subscribe img{
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+}
+#subscribe .subscribe-content{
+    margin-left: 300px;
+    color: #fff;
+}
+#subscribe .subscribe-content h1{
+    margin-bottom: 20px;
+}
+#subscribe .subscribe-content a{
+    background: lightgray;
+    color: blue;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+#subscribe .subscribe-content a:hover{
+   opacity: .8;
+}
+
+footer{
+    background: rgb(235, 234, 234);
+    margin-top: 20px;
+    padding: 20px;
+}
+#footer{
+    display: flex;
+}
+footer .footer-content{
+    margin-left: 50px;
+    margin-right: 100px;
+}
+footer .footer-content h1{
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+footer ul{
+    margin-left: 60px;
+    margin-top: 40px;
+    list-style-type: none;
+}
+footer ul h4{
+    margin-bottom: 10px;
+    color: darkblue;
+    text-decoration: underline;
+}
+footer ul li{
+    margin-bottom: 10px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+}
+footer ul li a:hover{
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+footer .footer-p{
+    text-align: center;
+    margin-top: 20px;
+    color: blue;
+}
